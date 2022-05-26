@@ -1,6 +1,6 @@
 :root{
-    --grid-cols: 1;
-    --grid-rows: 1;
+    --grid: 1;
+    --bc: black;
 }
 *{
     margin: 0;
@@ -8,19 +8,33 @@
 body{
     background-color: #FAF9F6;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.btn{
+    height: 50px;
+    width: 300px;
+    
 }
 #container{
     display: grid;
-    grid-gap: 1px;
-    height: 600px;
-    width: 600px;
+    gap: 1px;
+    height: 500px;
+    width: 500px;
     border: 2px solid black;
-    grid-template-rows: repeat(var(--grid-rows));
-    grid-template-columns: repeat(var(--grid-cols), 1fr);    
+    grid-template-rows: repeat(var(--grid), 1fr);
+    grid-template-columns: repeat(var(--grid), 1fr);    
 }
 .grid-items{
     border: 1px solid #ddd;
 }
-.grid-items:hover{
-    background-color: black;
+.effect{
+    background-color: var(--bc);
 }
