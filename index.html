@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><span>Etch-a-Sketch</span></header>
-    <input type="button" name="grid" id="grid" min="3" max="100" value="16">
+    <header><span class="a">Et</span><span class="b">ch</span><span class="c">-a-</span><span class="d">Ske</span><span class="e">tch</span></header>
+    <div class="firstbtn">
+        <button class ="btn first" type="button" name="grid" id="grid" min="3" max="100" value="16">16</button>
+    </div>
     <div class="container" id="container"></div>
     <div class="top">
-        <button class="btn" type="reset" onclick="refreshDiv()">Reset</button>
-        <input type="button" value="Black" class="color-btn">
-        <button class="btn">Eraser</button>
+        <button type="button" class="btn" id="reset" onclick="refreshDiv()">Reset</button>
+        <button type="button" value="Black" class="color-btn">Black</button>
+        <div class="outer button">
+            <button type="button" value="Black" class="Rainbow col">Rainbow</button>
+            <span></span>
+            <span></span>
+        </div>
+        <button type="button" class="btn" id="eraser" value="White">Eraser</button>
     </div>
     <footer></footer>
     <script src="main.js"></script>

@@ -1,12 +1,12 @@
 :root{
     --grid: 1;
-    --bc: #000000;
+    --bc: hsl(0, 0%, 0%);
 }
 *{
     margin: 0;
 }
 body{
-    background-color: #FAF9F6;
+    background-color: hsl(240, 100%, 99%);;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,33 +15,93 @@ body{
 header{
     font-size: 140px;
 }
+.a{
+    color: hsl(0, 100%, 60%);;
+}
+.b{
+    color: hsl(0, 80%, 50%);
+}
+.c{
+    color: hsl(0, 60%, 40%);
+}
+.d{
+    color: hsl(0, 40%, 30%);
+}
+.e{
+    color: hsl(0, 20%, 20%);
+}
 #color{
     border-radius: 50px;
 }
 .color-btn{
     height: 40px;
     width: 100px;
-    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Segoe UI";
+    border-radius: 10px;
+}
+.color-btn:hover{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 .top{
     display: flex;
-    padding: 10px;
+    margin: 10px auto;
     gap: 10px;
+}
+.firstbtn{
+    margin: 10px auto;
 }
 .btn{
     height: 40px;
     width: 100px;
-    border-radius: 4px;
-    color: #FAF9F6;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Segoe UI";
+    color: hsl(300, 10%, 20%);
+}
+.btn .first{
+    text-align: center;
+    padding: 200px auto;
 }
 .btn:hover{
-    transform: scale(3px);
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+.outer{
+    position: relative;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0); 
+}
+.outer button, .outer span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Segoe UI";
+}
+.order button{
+    background: #111;
+    cursor: pointer;
 }
 #container{
     display: grid;
     gap: 1px;
     height: 500px;
     width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
     border: 2px solid black;
     grid-template-rows: repeat(var(--grid), 1fr);
     grid-template-columns: repeat(var(--grid), 1fr);    
