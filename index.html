@@ -9,14 +9,13 @@
 </head>
 <body>
     <header><span>Etch-a-Sketch</span></header>
-    <div class="top">
-        <button class="btn" type="reset">Reset</button>
-        <button class="btn">Black</button>
-        <label for="btn">Grid</label>
-        <input type="range" name="grid" id="">
-        <button class="btn">eraser</button>
-    </div>
+    <input type="button" name="grid" id="grid" min="3" max="100" value="16">
     <div class="container" id="container"></div>
+    <div class="top">
+        <button class="btn" type="reset" onclick="refreshDiv()">Reset</button>
+        <input type="button" value="Black" class="color-btn">
+        <button class="btn">Eraser</button>
+    </div>
     <footer></footer>
     <script src="main.js"></script>
 </body>
