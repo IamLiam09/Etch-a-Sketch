@@ -72,29 +72,6 @@ header{
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
 }
-.outer{
-    position: relative;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0); 
-}
-.outer button, .outer span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.button{
-    height: 40px;
-    width: 100px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    font-family: "Segoe UI";
-}
-.order button{
-    background: #111;
-    cursor: pointer;
-}
 #container{
     display: grid;
     gap: 1px;
@@ -107,4 +84,11 @@ header{
     grid-template-columns: repeat(var(--grid), 1fr);    
 }
 .grid-items{
+}
+footer{
+    margin: 15px, auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

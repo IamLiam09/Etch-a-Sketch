@@ -4,6 +4,7 @@ const usergrid = document.querySelector(".btn first")
 var rangeEl = document.querySelector("#grid")
 const reset = document.getElementById("reset")
 const eraser = document.getElementById("eraser")
+const rainbow = document.querySelector(".rainbow")
 var range = rangeEl.value
 
 function gridbuild(grid){
